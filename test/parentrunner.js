@@ -37,9 +37,9 @@ suite('parentrunner', function() {
       this.process = {};
       this.runner = {};
 
-      this.spawn = function() {
+      this.spawn = (function() {
         this.calledSpawn = true;
-      }.bind(this);
+      }.bind(this));
     }
 
     var result;
